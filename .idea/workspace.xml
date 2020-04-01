@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83b9c045-13c6-4ef3-8591-1f60e78b045b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../cpn_hammer/src/clicktripz/openrtb/request/Device.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cpn_hammer/src/clicktripz/openrtb/request/Impression.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cpn_hammer/src/clicktripz/openrtb/request/Site.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cpn_hammer/src/clicktripz/openrtb/request/User.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../cpn_hammer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cpn_hammer/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../cpn_hammer/src/clicktripz/openrtb/request/BidRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cpn_hammer/src/clicktripz/openrtb/request/BidRequest.py" afterDir="false" />
     </list>
@@ -175,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585700611217</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Updated bid request">
+      <created>1585700825179</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1585700825179</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -196,6 +207,7 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="updated to python3" />
     <MESSAGE value="Added array" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added array" />
+    <MESSAGE value="Updated bid request" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated bid request" />
   </component>
 </project>

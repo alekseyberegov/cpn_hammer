@@ -3,17 +3,21 @@ from clicktripz.serialize.String import String
 from clicktripz.serialize.Array import Array
 from clicktripz.serialize.Serializable import Serializable
 
+from clicktripz.openrtb.request.Device import Device
+from clicktripz.openrtb.request.User import User
+from clicktripz.openrtb.request.Site import Site
+from clicktripz.openrtb.request.Impression import Impression
 
-class BidRequest:
-    id = Field(String)
+
+class BidRequest(Serializable):
+    id = Field(String, required=True)
 
     bcat = Field(Array(String))
 
-    imp = Field(Serializable)
+    imp = Field(Impression, required=True)
 
-    site = Field(Serializable)
+    site = Field(Site)
 
-    user = Field(Serializable)
+    user = Field(User)
 
-    def __init__(self):
-        pass
+    device = Field(Device)
