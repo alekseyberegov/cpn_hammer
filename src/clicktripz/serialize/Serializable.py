@@ -1,8 +1,8 @@
 import json
 
-from Reflection import add_reflection
-from Reflection import Reflection
-import ValidationError
+from clicktripz.serialize.Reflection import add_reflection
+from clicktripz.serialize.Reflection import Reflection
+from clicktripz.serialize.ValidationError import ValidationError
 
 
 def serialize(obj):

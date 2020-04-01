@@ -4,8 +4,9 @@
     <content url="file://$MODULE_DIR$/../cpn_hammer">
       <sourceFolder url="file://$MODULE_DIR$/../cpn_hammer/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/../cpn_hammer/venv" />
+      <excludeFolder url="file://$MODULE_DIR$/../cpn_hammer/venv3" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Python 3.7 (venv3)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TestRunnerService">

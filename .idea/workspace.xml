@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="83b9c045-13c6-4ef3-8591-1f60e78b045b" name="Default Changelist" comment="" />
+    <list default="true" id="83b9c045-13c6-4ef3-8591-1f60e78b045b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../cpn_hammer/.idea/cpn_hammer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../cpn_hammer/.idea/cpn_hammer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cpn_hammer/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cpn_hammer/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cpn_hammer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cpn_hammer/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cpn_hammer/src/clicktripz/serialize/Field.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cpn_hammer/src/clicktripz/serialize/Field.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cpn_hammer/src/clicktripz/serialize/Reflection.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cpn_hammer/src/clicktripz/serialize/Reflection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cpn_hammer/src/clicktripz/serialize/Serializable.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cpn_hammer/src/clicktripz/serialize/Serializable.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,9 +26,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../cpn_hammer" />
   </component>
   <component name="ProjectId" id="1ZuQxdTRrpJJTdEo7frHUL4XPep" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -143,6 +151,32 @@
       <option name="presentableId" value="Default" />
       <updated>1585686746529</updated>
     </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <created>1585696979356</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585696979356</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
   </component>
 </project>

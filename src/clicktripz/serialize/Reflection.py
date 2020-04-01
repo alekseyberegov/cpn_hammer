@@ -1,4 +1,4 @@
-from Field import Field
+from clicktripz.serialize.Field import Field
 
 
 def add_reflection(metaclass):

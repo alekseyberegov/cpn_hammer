@@ -1,5 +1,5 @@
 
-import ValidationError
+from clicktripz.serialize.ValidationError import ValidationError
 
 
 def get_deserializer(field_type):
