@@ -24,8 +24,7 @@ class Serializable(object):
     def __init__(self, **kwargs):
         if not self._required.issubset(kwargs):
             missing = next(name for name in self._required if name not in kwargs)
-            raise ValidationError('{}.{} is required'
-                                  .format(self.__class__.__name__,  missing))
+            raise ValidationError('{}.{} is required'.format(self.__class__.__name__,  missing))
         self.__dict__.update(self._defaults, **kwargs)
 
     def __getattr__(self, k):
@@ -34,10 +33,10 @@ class Serializable(object):
     @classmethod
     def deserialize(cls, obj):
         data = {}
-        deser = cls._deserializers.get
+        func = cls._deserializers.get
         for k, v in iter(obj.items):
             if v is not None:
-                deserialize = deser(k)
+                deserialize = func(k)
                 data[k] = deserialize(v) if deserialize is not None else v
         return cls(**data)
 
