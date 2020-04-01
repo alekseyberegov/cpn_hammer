@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83b9c045-13c6-4ef3-8591-1f60e78b045b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../cpn_hammer/src/clicktripz/serialize/Array.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../cpn_hammer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cpn_hammer/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../cpn_hammer/src/clicktripz/openrtb/request/BidRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cpn_hammer/src/clicktripz/openrtb/request/BidRequest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cpn_hammer/src/clicktripz/serialize/Serializable.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cpn_hammer/src/clicktripz/serialize/Serializable.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -170,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585699630273</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added array">
+      <created>1585700611217</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1585700611217</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -190,6 +195,7 @@
     </ignored-roots>
     <MESSAGE value="initial commit" />
     <MESSAGE value="updated to python3" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated to python3" />
+    <MESSAGE value="Added array" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added array" />
   </component>
 </project>
