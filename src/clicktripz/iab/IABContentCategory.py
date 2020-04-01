@@ -1,3 +1,5 @@
+from random import randint
+
 iab_content_categories = [
     ('Arts & Entertainment', [
         'Books & Literature',
@@ -421,6 +423,14 @@ iab_content_categories = [
 
 
 class IABContentCategory(object):
+
+    @staticmethod
+    def get_random(cats: object = None):
+        if cats is None:
+            cats = iab_content_categories
+        top = randint(0, 22)
+        second = randint(0, len(cats[top][1]) - 1)
+        return ['IAB{}-{}'.format(top + 1, second + 1), cats[top][1][second], cats[top][0]]
 
     @staticmethod
     def get_desc(name: str, cats: object = None) -> list:

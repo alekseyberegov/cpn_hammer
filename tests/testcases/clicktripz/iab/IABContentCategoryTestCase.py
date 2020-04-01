@@ -26,7 +26,9 @@ class IABContentCategoryTestCase(unittest.TestCase):
         desc = self.category.get_desc("XUI")
         self.assertListEqual(desc, ['XUI'])
 
-
-
+    def test_get_random(self):
+        cats = self.category.get_random()
+        self.assertEqual(len(cats), 3)
+        self.assertListEqual([cats[1],cats[2]], self.category.get_desc(cats[0]))
 
 

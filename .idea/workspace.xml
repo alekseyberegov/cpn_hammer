@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83b9c045-13c6-4ef3-8591-1f60e78b045b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data/iab_content_categories.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/clicktripz/iab/IABContentCategory.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/clicktripz/iab/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/testcases/clicktripz/iab/IABContentCategoryTestCase.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/testcases/clicktripz/iab/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clicktripz/iab/IABContentCategory.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/clicktripz/iab/IABContentCategory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/CPNTestSuite.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/CPNTestSuite.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/testcases/clicktripz/iab/IABContentCategoryTestCase.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/testcases/clicktripz/iab/IABContentCategoryTestCase.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +42,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in IABContentCategoryTestCase.py">
+  <component name="RunManager" selected="Python.CPNTestSuite">
     <configuration name="CPNTestSuite" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="cpn_hammer" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -124,8 +122,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests in IABContentCategoryTestCase.py" />
         <item itemvalue="Python.CPNTestSuite" />
+        <item itemvalue="Python tests.Unittests in IABContentCategoryTestCase.py" />
         <item itemvalue="Python tests.Unittests in UserDeviceFactoryTestCase.py" />
         <item itemvalue="Python tests.Unittests in DemandSourceTestCase.py" />
         <item itemvalue="Python tests.Unittests in FieldTestCase.py" />
@@ -290,7 +288,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585774716671</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Added IAB categories">
+      <created>1585777849384</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1585777849384</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -320,40 +325,41 @@
     <MESSAGE value="Added US IPs" />
     <MESSAGE value="Added user agents" />
     <MESSAGE value="Added device factory" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added device factory" />
+    <MESSAGE value="Added IAB categories" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added IAB categories" />
   </component>
   <component name="WindowStateProjectService">
     <state x="508" y="326" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585767267091">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="508" y="326" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1680.1027@0.23.1680.1027" timestamp="1585767267091" />
-    <state x="451" y="137" key="CommitChangelistDialog2" timestamp="1585774716548">
+    <state x="451" y="137" key="CommitChangelistDialog2" timestamp="1585777849225">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="451" y="137" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1585774716548" />
-    <state width="1618" height="266" key="GridCell.Tab.0.bottom" timestamp="1585777826746">
+    <state x="451" y="137" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1585777849225" />
+    <state width="1618" height="266" key="GridCell.Tab.0.bottom" timestamp="1585778543485">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1618" height="266" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1585777826746" />
-    <state width="1618" height="266" key="GridCell.Tab.0.center" timestamp="1585777826746">
+    <state width="1618" height="266" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1585778543485" />
+    <state width="1618" height="266" key="GridCell.Tab.0.center" timestamp="1585778543484">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1618" height="266" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1585777826746" />
-    <state width="1618" height="266" key="GridCell.Tab.0.left" timestamp="1585777826745">
+    <state width="1618" height="266" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1585778543484" />
+    <state width="1618" height="266" key="GridCell.Tab.0.left" timestamp="1585778543484">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1618" height="266" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1585777826745" />
-    <state width="1618" height="266" key="GridCell.Tab.0.right" timestamp="1585777826746">
+    <state width="1618" height="266" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1585778543484" />
+    <state width="1618" height="266" key="GridCell.Tab.0.right" timestamp="1585778543484">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1618" height="266" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1585777826746" />
+    <state width="1618" height="266" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1585778543484" />
     <state x="329" y="175" key="SettingsEditor" timestamp="1585713183049">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="329" y="175" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1585713183049" />
-    <state x="427" y="276" key="Vcs.Push.Dialog.v2" timestamp="1585774718176">
+    <state x="427" y="276" key="Vcs.Push.Dialog.v2" timestamp="1585777851464">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="427" y="276" key="Vcs.Push.Dialog.v2/0.23.1680.1027@0.23.1680.1027" timestamp="1585774718176" />
+    <state x="427" y="276" key="Vcs.Push.Dialog.v2/0.23.1680.1027@0.23.1680.1027" timestamp="1585777851464" />
   </component>
 </project>
