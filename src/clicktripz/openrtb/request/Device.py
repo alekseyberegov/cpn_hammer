@@ -4,3 +4,6 @@ from clicktripz.serialize.Field import Field
 
 
 class Device(Serializable):
+    ua = Field(String)
+
+    ip = Field(String)

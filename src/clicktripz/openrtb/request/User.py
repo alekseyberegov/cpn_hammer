@@ -4,3 +4,4 @@ from clicktripz.serialize.Field import Field
 
 
 class User(Serializable):
+    id = Field(String)
