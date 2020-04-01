@@ -34,7 +34,7 @@ class Serializable(object):
     def deserialize(cls, obj):
         data = {}
         func = cls._deserializers.get
-        for k, v in iter(obj.items):
+        for k, v in iter(obj.items()):
             if v is not None:
                 deserialize = func(k)
                 data[k] = deserialize(v) if deserialize is not None else v

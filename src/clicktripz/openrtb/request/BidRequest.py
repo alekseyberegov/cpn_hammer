@@ -21,3 +21,6 @@ class BidRequest(Serializable):
     user = Field(User)
 
     device = Field(Device)
+
+    def __str__(self):
+        return str(self.serialize())

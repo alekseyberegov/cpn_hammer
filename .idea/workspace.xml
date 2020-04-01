@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83b9c045-13c6-4ef3-8591-1f60e78b045b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../cpn_hammer/src/clicktripz/openrtb/request/Device.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cpn_hammer/src/clicktripz/openrtb/request/Impression.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cpn_hammer/src/clicktripz/openrtb/request/Site.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cpn_hammer/src/clicktripz/openrtb/request/User.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cpn_hammer/src/clicktripz/openrtb/response/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../cpn_hammer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cpn_hammer/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../cpn_hammer/src/clicktripz/openrtb/request/BidRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cpn_hammer/src/clicktripz/openrtb/request/BidRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cpn_hammer/src/clicktripz/serialize/Serializable.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cpn_hammer/src/clicktripz/serialize/Serializable.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -186,7 +184,21 @@
       <option name="project" value="LOCAL" />
       <updated>1585700825179</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Updated bid request">
+      <created>1585701506627</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1585701506627</updated>
+    </task>
+    <task id="LOCAL-00007" summary="BidRequest">
+      <created>1585701660649</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1585701660649</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -208,6 +220,7 @@
     <MESSAGE value="updated to python3" />
     <MESSAGE value="Added array" />
     <MESSAGE value="Updated bid request" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated bid request" />
+    <MESSAGE value="BidRequest" />
+    <option name="LAST_COMMIT_MESSAGE" value="BidRequest" />
   </component>
 </project>
