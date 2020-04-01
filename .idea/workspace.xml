@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83b9c045-13c6-4ef3-8591-1f60e78b045b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clicktripz/device/UserDeviceFactory.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/clicktripz/device/UserDeviceFactory.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/testcases/clicktripz/device/UserDeviceFactoryTestCase.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/testcases/clicktripz/device/UserDeviceFactoryTestCase.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/CPNTestSuite.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/CPNTestSuite.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +39,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in UserDeviceFactoryTestCase.py">
+  <component name="RunManager" selected="Python.CPNTestSuite">
     <configuration name="CPNTestSuite" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="cpn_hammer" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -128,9 +126,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.CPNTestSuite" />
         <item itemvalue="Python tests.Unittests in UserDeviceFactoryTestCase.py" />
         <item itemvalue="Python tests.Unittests in DemandSourceTestCase.py" />
-        <item itemvalue="Python.CPNTestSuite" />
         <item itemvalue="Python tests.Unittests in FieldTestCase.py" />
         <item itemvalue="Python.scratch" />
       </list>
@@ -280,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585774294166</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Added device factory">
+      <created>1585774655708</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1585774655708</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -317,33 +322,33 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="508" y="326" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1680.1027@0.23.1680.1027" timestamp="1585767267091" />
-    <state x="451" y="137" key="CommitChangelistDialog2" timestamp="1585774294011">
+    <state x="451" y="137" key="CommitChangelistDialog2" timestamp="1585774655571">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="451" y="137" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1585774294011" />
-    <state width="1618" height="266" key="GridCell.Tab.0.bottom" timestamp="1585774632360">
+    <state x="451" y="137" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1585774655571" />
+    <state width="1618" height="266" key="GridCell.Tab.0.bottom" timestamp="1585774698425">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1618" height="266" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1585774632360" />
-    <state width="1618" height="266" key="GridCell.Tab.0.center" timestamp="1585774632359">
+    <state width="1618" height="266" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1585774698425" />
+    <state width="1618" height="266" key="GridCell.Tab.0.center" timestamp="1585774698424">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1618" height="266" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1585774632359" />
-    <state width="1618" height="266" key="GridCell.Tab.0.left" timestamp="1585774632359">
+    <state width="1618" height="266" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1585774698424" />
+    <state width="1618" height="266" key="GridCell.Tab.0.left" timestamp="1585774698424">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1618" height="266" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1585774632359" />
-    <state width="1618" height="266" key="GridCell.Tab.0.right" timestamp="1585774632360">
+    <state width="1618" height="266" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1585774698424" />
+    <state width="1618" height="266" key="GridCell.Tab.0.right" timestamp="1585774698425">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1618" height="266" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1585774632360" />
+    <state width="1618" height="266" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1585774698425" />
     <state x="329" y="175" key="SettingsEditor" timestamp="1585713183049">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="329" y="175" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1585713183049" />
-    <state x="427" y="276" key="Vcs.Push.Dialog.v2" timestamp="1585774295616">
+    <state x="427" y="276" key="Vcs.Push.Dialog.v2" timestamp="1585774657665">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="427" y="276" key="Vcs.Push.Dialog.v2/0.23.1680.1027@0.23.1680.1027" timestamp="1585774295616" />
+    <state x="427" y="276" key="Vcs.Push.Dialog.v2/0.23.1680.1027@0.23.1680.1027" timestamp="1585774657665" />
   </component>
 </project>

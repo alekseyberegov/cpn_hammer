@@ -1,11 +1,13 @@
 import unittest
 
+from testcases.clicktripz.device.UserDeviceFactoryTestCase import UserDeviceFactoryTestCase
 from testcases.clicktripz.serialize.ArrayTestCase import ArrayTestCase
 from testcases.clicktripz.serialize.FieldTestCase import FieldTestCase
 
 test_cases = [
     FieldTestCase,
-    ArrayTestCase
+    ArrayTestCase,
+    UserDeviceFactoryTestCase
 ]
 
 
