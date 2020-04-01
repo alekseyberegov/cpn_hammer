@@ -21,7 +21,7 @@ def add_reflection(metaclass):
 class Reflection(type):
     def __init__(cls, name, bases, attrs):
         super(Reflection, cls).__init__(name, bases, attrs)
-        named_fields = [item for item in iter(attrs) if isinstance(item[1], Field)]
+        named_fields = [item for item in iter(attrs.items()) if isinstance(item[1], Field)]
         cls._deserializers = {name: field.deserialize for name, field in named_fields}
         cls._defaults = {name: field.default for name, field in named_fields}
         cls._required = {name for name, field in named_fields if field.required}
