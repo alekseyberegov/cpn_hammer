@@ -1,4 +1,11 @@
 
+from requests import Response
+from clicktripz.openrtb.request.BidRequest import BidRequest
+
+
 class SSPEventListener(object):
-    def on_response(self, response):
-        print(response)
+    def before_request(self, request: BidRequest):
+        print(request)
+
+    def on_response(self, response: Response):
+        print(response.content)

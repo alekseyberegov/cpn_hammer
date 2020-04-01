@@ -30,6 +30,7 @@ class SSPContentStrategy(object):
                 site=Site(id=sites[randint(0, len(sites) - 1)], cat=IABContentCategory.get_random()),
                 user=User(id=str(uuid.uuid1()))
             )
+            self.listener.before_request(req)
             resp = self.demand_source.send_bid_request(req)
             self.listener.on_response(resp)
             sleep(pause)

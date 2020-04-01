@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83b9c045-13c6-4ef3-8591-1f60e78b045b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/clicktripz/simulators/SSPContentStrategy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/clicktripz/simulators/SSPEventListener.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/clicktripz/simulators/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testcases/clicktripz/openrtb/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testcases/clicktripz/simulators/SSPContentStrategyTestCase.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testcases/clicktripz/simulators/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clicktripz/simulators/SSPContentStrategy.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/clicktripz/simulators/SSPContentStrategy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clicktripz/simulators/SSPEventListener.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/clicktripz/simulators/SSPEventListener.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +45,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.CPNTestSuite">
+  <component name="RunManager" selected="Python tests.Unittests in SSPContentStrategyTestCase.py">
     <configuration name="CPNTestSuite" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="cpn_hammer" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -79,20 +81,6 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in FieldTestCase.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="cpn_hammer" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/testcases/clicktripz/serialize" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/testcases/clicktripz/serialize/FieldTestCase.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="Unittests in IABContentCategoryTestCase.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="cpn_hammer" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -104,6 +92,20 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/testcases/clicktripz/iab/IABContentCategoryTestCase.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in SSPContentStrategyTestCase.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="cpn_hammer" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/testcases/clicktripz/simulators" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/testcases/clicktripz/simulators/SSPContentStrategyTestCase.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
@@ -123,11 +125,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests in SSPContentStrategyTestCase.py" />
         <item itemvalue="Python.CPNTestSuite" />
         <item itemvalue="Python tests.Unittests in IABContentCategoryTestCase.py" />
         <item itemvalue="Python tests.Unittests in UserDeviceFactoryTestCase.py" />
         <item itemvalue="Python tests.Unittests in DemandSourceTestCase.py" />
-        <item itemvalue="Python tests.Unittests in FieldTestCase.py" />
       </list>
     </recent_temporary>
   </component>
@@ -303,7 +305,21 @@
       <option name="project" value="LOCAL" />
       <updated>1585778575294</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Added simulator">
+      <created>1585780122662</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1585780122662</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Added simulator">
+      <created>1585780131863</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1585780131863</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -334,40 +350,41 @@
     <MESSAGE value="Added user agents" />
     <MESSAGE value="Added device factory" />
     <MESSAGE value="Added IAB categories" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added IAB categories" />
+    <MESSAGE value="Added simulator" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added simulator" />
   </component>
   <component name="WindowStateProjectService">
     <state x="508" y="326" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585767267091">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="508" y="326" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1680.1027@0.23.1680.1027" timestamp="1585767267091" />
-    <state x="451" y="137" key="CommitChangelistDialog2" timestamp="1585780122516">
+    <state x="451" y="137" key="CommitChangelistDialog2" timestamp="1585780131745">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="451" y="137" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1585780122516" />
-    <state width="1618" height="266" key="GridCell.Tab.0.bottom" timestamp="1585779220550">
+    <state x="451" y="137" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1585780131745" />
+    <state width="1618" height="266" key="GridCell.Tab.0.bottom" timestamp="1585780949891">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1618" height="266" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1585779220550" />
-    <state width="1618" height="266" key="GridCell.Tab.0.center" timestamp="1585779220548">
+    <state width="1618" height="266" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1585780949891" />
+    <state width="1618" height="266" key="GridCell.Tab.0.center" timestamp="1585780949890">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1618" height="266" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1585779220548" />
-    <state width="1618" height="266" key="GridCell.Tab.0.left" timestamp="1585779220548">
+    <state width="1618" height="266" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1585780949890" />
+    <state width="1618" height="266" key="GridCell.Tab.0.left" timestamp="1585780949890">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1618" height="266" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1585779220548" />
-    <state width="1618" height="266" key="GridCell.Tab.0.right" timestamp="1585779220549">
+    <state width="1618" height="266" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1585780949890" />
+    <state width="1618" height="266" key="GridCell.Tab.0.right" timestamp="1585780949891">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1618" height="266" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1585779220549" />
+    <state width="1618" height="266" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1585780949891" />
     <state x="329" y="175" key="SettingsEditor" timestamp="1585713183049">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="329" y="175" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1585713183049" />
-    <state x="427" y="276" key="Vcs.Push.Dialog.v2" timestamp="1585778576633">
+    <state x="427" y="276" key="Vcs.Push.Dialog.v2" timestamp="1585780133201">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="427" y="276" key="Vcs.Push.Dialog.v2/0.23.1680.1027@0.23.1680.1027" timestamp="1585778576633" />
+    <state x="427" y="276" key="Vcs.Push.Dialog.v2/0.23.1680.1027@0.23.1680.1027" timestamp="1585780133201" />
   </component>
 </project>
