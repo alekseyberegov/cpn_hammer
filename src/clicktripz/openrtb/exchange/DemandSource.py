@@ -13,5 +13,6 @@ class DemandSource(object):
         req = Request('POST', self.url, data=data, headers=self.headers)
         prepped = req.prepare()
         response = session.send(prepped)
+        session.close()
 
         return response
