@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83b9c045-13c6-4ef3-8591-1f60e78b045b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data/browser_user_agents" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/clicktripz/device/UserDeviceFactory.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/clicktripz/device/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testcases/clicktripz/device/UserDeviceFactoryTestCase.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testcases/clicktripz/device/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +43,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in DemandSourceTestCase.py">
+  <component name="RunManager" selected="Python tests.Unittests in UserDeviceFactoryTestCase.py">
     <configuration name="CPNTestSuite" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="cpn_hammer" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -111,8 +114,23 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Unittests in UserDeviceFactoryTestCase.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="cpn_hammer" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/testcases/clicktripz/device" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/testcases/clicktripz/device/UserDeviceFactoryTestCase.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests in UserDeviceFactoryTestCase.py" />
         <item itemvalue="Python tests.Unittests in DemandSourceTestCase.py" />
         <item itemvalue="Python.CPNTestSuite" />
         <item itemvalue="Python tests.Unittests in FieldTestCase.py" />
@@ -243,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585767133066</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Added user agents">
+      <created>1585767462343</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1585767462343</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -271,40 +296,41 @@
     <MESSAGE value="added bid response" />
     <MESSAGE value="Add testcases" />
     <MESSAGE value="Added US IPs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added US IPs" />
+    <MESSAGE value="Added user agents" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added user agents" />
   </component>
   <component name="WindowStateProjectService">
     <state x="508" y="326" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585767267091">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="508" y="326" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1680.1027@0.23.1680.1027" timestamp="1585767267091" />
-    <state x="451" y="137" key="CommitChangelistDialog2" timestamp="1585767132920">
+    <state x="451" y="137" key="CommitChangelistDialog2" timestamp="1585767462207">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="451" y="137" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1585767132920" />
-    <state width="1618" height="266" key="GridCell.Tab.0.bottom" timestamp="1585724180036">
+    <state x="451" y="137" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1585767462207" />
+    <state width="1618" height="266" key="GridCell.Tab.0.bottom" timestamp="1585769219011">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1618" height="266" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1585724180036" />
-    <state width="1618" height="266" key="GridCell.Tab.0.center" timestamp="1585724180035">
+    <state width="1618" height="266" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1585769219011" />
+    <state width="1618" height="266" key="GridCell.Tab.0.center" timestamp="1585769219011">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1618" height="266" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1585724180035" />
-    <state width="1618" height="266" key="GridCell.Tab.0.left" timestamp="1585724180034">
+    <state width="1618" height="266" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1585769219011" />
+    <state width="1618" height="266" key="GridCell.Tab.0.left" timestamp="1585769219010">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1618" height="266" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1585724180034" />
-    <state width="1618" height="266" key="GridCell.Tab.0.right" timestamp="1585724180036">
+    <state width="1618" height="266" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1585769219010" />
+    <state width="1618" height="266" key="GridCell.Tab.0.right" timestamp="1585769219011">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1618" height="266" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1585724180036" />
+    <state width="1618" height="266" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1585769219011" />
     <state x="329" y="175" key="SettingsEditor" timestamp="1585713183049">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="329" y="175" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1585713183049" />
-    <state x="427" y="276" key="Vcs.Push.Dialog.v2" timestamp="1585767134867">
+    <state x="427" y="276" key="Vcs.Push.Dialog.v2" timestamp="1585767464221">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="427" y="276" key="Vcs.Push.Dialog.v2/0.23.1680.1027@0.23.1680.1027" timestamp="1585767134867" />
+    <state x="427" y="276" key="Vcs.Push.Dialog.v2/0.23.1680.1027@0.23.1680.1027" timestamp="1585767464221" />
   </component>
 </project>
