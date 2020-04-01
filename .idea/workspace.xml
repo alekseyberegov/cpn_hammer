@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83b9c045-13c6-4ef3-8591-1f60e78b045b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../cpn_hammer/src/clicktripz/openrtb/response/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cpn_hammer/src/clicktripz/openrtb/response/Bid.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cpn_hammer/src/clicktripz/openrtb/response/BidResponse.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cpn_hammer/src/clicktripz/openrtb/response/SeatBid.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../cpn_hammer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cpn_hammer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cpn_hammer/src/clicktripz/openrtb/request/BidRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cpn_hammer/src/clicktripz/openrtb/request/BidRequest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cpn_hammer/src/clicktripz/serialize/Serializable.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cpn_hammer/src/clicktripz/serialize/Serializable.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -198,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585701660649</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="BidRequest">
+      <created>1585706610311</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1585706610311</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
