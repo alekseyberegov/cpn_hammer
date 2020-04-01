@@ -5,6 +5,7 @@ from clicktripz.serialize.Array import Array
 
 from clicktripz.openrtb.response.Bid import Bid
 
+
 class SeatBid(Serializable):
 
     """At least one seatbid object is required in a bid response object.
