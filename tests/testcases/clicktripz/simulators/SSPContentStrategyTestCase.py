@@ -13,7 +13,7 @@ from clicktripz.simulators.SSPContentStrategy import SSPContentStrategy
 class SSPContentStrategyTestCase(unittest.TestCase):
     def setUp(self):
         ini = configparser.ConfigParser()
-        ini.read(['ctn.cfg', os.path.expanduser('~/.cpn.ini')])
+        ini.read(['.cpn.ini', os.path.expanduser('~/.cpn.ini')])
 
         data_dir = Path(os.path.dirname(__file__)) / '..' / '..' / '..' / '..' / 'data'
 
