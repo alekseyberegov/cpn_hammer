@@ -1,7 +1,9 @@
 from os import path
+from random import randint
+from random import getrandbits
+from ipaddress import IPv4Network, IPv4Address
 
 from clicktripz.openrtb.request.Device import Device
-from random import randint
 
 
 class UserDeviceFactory(object):
@@ -35,4 +37,9 @@ class UserDeviceFactory(object):
     def random_ipv6():
         return ':'.join([hex(randint(2 ** 16, 2 ** 17))[-4:] for x in range(8)])
 
+    @staticmethod
+    def random_subnet_ip(net):
+        subnet = IPv4Network(net + "/24")
+        bits = getrandbits(subnet.max_prefixlen - subnet.prefixlen)
+        return IPv4Address(subnet.network_address + bits)
 
