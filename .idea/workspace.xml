@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="83b9c045-13c6-4ef3-8591-1f60e78b045b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clicktripz/simulators/SQLiteSSPEventListener.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/clicktripz/simulators/SQLiteSSPEventListener.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/testcases/clicktripz/simulators/SSPContentStrategyTestCase.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/testcases/clicktripz/simulators/SSPContentStrategyTestCase.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clicktripz/device/UserDeviceFactory.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/clicktripz/device/UserDeviceFactory.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +41,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in SSPContentStrategyTestCase.py">
+  <component name="RunManager" selected="Python.CPNTestSuite">
     <configuration name="CPNTestSuite" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="cpn_hammer" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -122,8 +121,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests in SSPContentStrategyTestCase.py" />
         <item itemvalue="Python.CPNTestSuite" />
+        <item itemvalue="Python tests.Unittests in SSPContentStrategyTestCase.py" />
         <item itemvalue="Python tests.Unittests in IABContentCategoryTestCase.py" />
         <item itemvalue="Python tests.Unittests in UserDeviceFactoryTestCase.py" />
         <item itemvalue="Python tests.Unittests in DemandSourceTestCase.py" />
@@ -344,7 +343,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585788814897</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Added DB support">
+      <created>1585793550039</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1585793550039</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -384,33 +390,33 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="508" y="326" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1680.1027@0.23.1680.1027" timestamp="1585767267091" />
-    <state x="451" y="137" key="CommitChangelistDialog2" timestamp="1585788814726">
+    <state x="451" y="137" key="CommitChangelistDialog2" timestamp="1585793549824">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="451" y="137" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1585788814726" />
-    <state width="1618" height="266" key="GridCell.Tab.0.bottom" timestamp="1585793530135">
+    <state x="451" y="137" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1585793549824" />
+    <state width="1618" height="76" key="GridCell.Tab.0.bottom" timestamp="1585851798866">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1618" height="266" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1585793530135" />
-    <state width="1618" height="266" key="GridCell.Tab.0.center" timestamp="1585793530134">
+    <state width="1618" height="76" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1585851798866" />
+    <state width="1618" height="76" key="GridCell.Tab.0.center" timestamp="1585851798866">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1618" height="266" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1585793530134" />
-    <state width="1618" height="266" key="GridCell.Tab.0.left" timestamp="1585793530134">
+    <state width="1618" height="76" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1585851798866" />
+    <state width="1618" height="76" key="GridCell.Tab.0.left" timestamp="1585851798865">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1618" height="266" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1585793530134" />
-    <state width="1618" height="266" key="GridCell.Tab.0.right" timestamp="1585793530135">
+    <state width="1618" height="76" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1585851798865" />
+    <state width="1618" height="76" key="GridCell.Tab.0.right" timestamp="1585851798866">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1618" height="266" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1585793530135" />
+    <state width="1618" height="76" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1585851798866" />
     <state x="329" y="175" key="SettingsEditor" timestamp="1585781551984">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="329" y="175" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1585781551984" />
-    <state x="427" y="276" key="Vcs.Push.Dialog.v2" timestamp="1585788816654">
+    <state x="427" y="276" key="Vcs.Push.Dialog.v2" timestamp="1585793551911">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="427" y="276" key="Vcs.Push.Dialog.v2/0.23.1680.1027@0.23.1680.1027" timestamp="1585788816654" />
+    <state x="427" y="276" key="Vcs.Push.Dialog.v2/0.23.1680.1027@0.23.1680.1027" timestamp="1585793551911" />
   </component>
 </project>

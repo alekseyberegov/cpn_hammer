@@ -18,16 +18,21 @@ class UserDeviceFactory(object):
         return Device(ip=self.random_us_ipv4(), ua=self.random_ua())
 
     def random_ua(self):
-        return self.random_peek(self.ua_list)
+        return self.random_get(self.ua_list)
 
     def random_us_ipv4(self):
-        return self.random_peek(self.ip_list)
+        return self.random_get(self.ip_list)
 
     @staticmethod
-    def random_peek(data):
+    def random_get(data):
         return data[randint(0, len(data) - 1)]
 
     @staticmethod
     def random_ipv4():
         return '.'.join([str(randint(23, 216)) for x in range(4)])
+
+    @staticmethod
+    def random_ipv6():
+        return ':'.join([hex(randint(2 ** 16, 2 ** 17))[-4:] for x in range(8)])
+
 
