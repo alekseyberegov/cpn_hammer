@@ -1,12 +1,12 @@
 import os
 import unittest
 from pathlib import Path
+from random import randint
 
 from clicktripz.device.UserDeviceFactory import UserDeviceFactory
 from clicktripz.openrtb.exchange.DemandSource import DemandSource
 from clicktripz.simulators.SQLiteSSPEventListener import SQLiteSSPEventListener
 from clicktripz.simulators.SSPContentStrategy import SSPContentStrategy
-from clicktripz.simulators.SSPEventListener import SSPEventListener
 
 
 class SSPContentStrategyTestCase(unittest.TestCase):
@@ -15,7 +15,7 @@ class SSPContentStrategyTestCase(unittest.TestCase):
 
         self.demand_source = DemandSource('https://engine.4dsply.com/openrtb.engine?id=4acdfb19-9abc-4f7b-b462-6db64da879b4&zoneId=60436')
         self.device_factory = UserDeviceFactory(data_dir=data_dir)
-        self.listener = SQLiteSSPEventListener('bids')
+        self.listener = SQLiteSSPEventListener(Path.home() / 'databases')
         self.simulator = SSPContentStrategy(self.device_factory, self.demand_source, self.listener)
 
     def tearDown(self):
@@ -25,4 +25,4 @@ class SSPContentStrategyTestCase(unittest.TestCase):
         del self.listener
 
     def test_short_run(self):
-        self.simulator.run(1000, 1, ['360', '2824'])
+        self.simulator.run(4000, randint(500, 3000) / 1000, ['360', '2824', '2828', '1482'])
