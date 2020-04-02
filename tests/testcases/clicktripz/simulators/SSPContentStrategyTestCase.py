@@ -25,4 +25,4 @@ class SSPContentStrategyTestCase(unittest.TestCase):
         del self.listener
 
     def test_short_run(self):
-        self.simulator.run(3, 0.5, ['360', '2824'])
+        self.simulator.run(1000, 1, ['360', '2824'])
