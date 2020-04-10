@@ -17,5 +17,5 @@ class WebPhotoTakerTestCase(unittest.TestCase):
         del self.taker
 
     def test_take_photo(self):
-        self.taker.take_photo('http://www.google.com')
+        self.taker.take_photo('https://www.fightful.com/wrestling/?utm_source=AdSupply&utm_campaign=AS-Desktop&utm_medium=&utm_content=15458')
 

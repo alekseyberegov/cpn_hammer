@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="10" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="83b9c045-13c6-4ef3-8591-1f60e78b045b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/clicktripz/image/WebPhotoTaker.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/clicktripz/image/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/testcases/clicktripz/image/WebPhotoTakerTestCase.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/testcases/clicktripz/image/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli/Creative.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clicktripz/image/WebPhotoTaker.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/clicktripz/image/WebPhotoTaker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/testcases/clicktripz/image/WebPhotoTakerTestCase.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/testcases/clicktripz/image/WebPhotoTakerTestCase.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +68,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Creative" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="cpn_hammer" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cli" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cli/Creative.py" />
+      <option name="PARAMETERS" value="images_from_db bids_04_01_2020-19_12_10_.db" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Unittests in IABContentCategoryTestCase.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="cpn_hammer" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -94,20 +117,6 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in UserDeviceFactoryTestCase.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="cpn_hammer" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/testcases/clicktripz/device" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/testcases/clicktripz/device/UserDeviceFactoryTestCase.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="Unittests in WebPhotoTakerTestCase.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="cpn_hammer" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -125,10 +134,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.Unittests in WebPhotoTakerTestCase.py" />
+        <item itemvalue="Python.Creative" />
         <item itemvalue="Python tests.Unittests in SSPContentStrategyTestCase.py" />
         <item itemvalue="Python.CPNTestSuite" />
         <item itemvalue="Python tests.Unittests in IABContentCategoryTestCase.py" />
-        <item itemvalue="Python tests.Unittests in UserDeviceFactoryTestCase.py" />
       </list>
     </recent_temporary>
   </component>
@@ -374,7 +383,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585868273370</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Added DB support">
+      <created>1586478158361</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1586478158361</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -410,37 +426,53 @@
     <option name="LAST_COMMIT_MESSAGE" value="Added DB support" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="508" y="326" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585767267091">
+    <state x="517" y="142" key="#Creative" timestamp="1586480255793">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="508" y="326" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1680.1027@0.23.1680.1027" timestamp="1585767267091" />
-    <state x="451" y="137" key="CommitChangelistDialog2" timestamp="1585868273231">
+    <state x="517" y="142" key="#Creative/0.23.1680.1027@0.23.1680.1027" timestamp="1586480255793" />
+    <state x="286" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586487643158">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="451" y="137" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1585868273231" />
-    <state width="1618" height="294" key="GridCell.Tab.0.bottom" timestamp="1586478005107">
+    <state x="286" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1586487643158" />
+    <state x="508" y="326" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586478575210">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1618" height="294" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1586478005107" />
-    <state width="1618" height="294" key="GridCell.Tab.0.center" timestamp="1586478005106">
+    <state x="508" y="326" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1680.1027@0.23.1680.1027" timestamp="1586478575210" />
+    <state x="451" y="137" key="CommitChangelistDialog2" timestamp="1586478158175">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1618" height="294" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1586478005106" />
-    <state width="1618" height="294" key="GridCell.Tab.0.left" timestamp="1586478005106">
+    <state x="451" y="137" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1586478158175" />
+    <state width="1618" height="294" key="GridCell.Tab.0.bottom" timestamp="1586505436436">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1618" height="294" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1586478005106" />
-    <state width="1618" height="294" key="GridCell.Tab.0.right" timestamp="1586478005106">
+    <state width="1618" height="294" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1586505436436" />
+    <state width="1618" height="294" key="GridCell.Tab.0.center" timestamp="1586505436435">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1618" height="294" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1586478005106" />
-    <state x="329" y="175" key="SettingsEditor" timestamp="1586477763916">
+    <state width="1618" height="294" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1586505436435" />
+    <state width="1618" height="294" key="GridCell.Tab.0.left" timestamp="1586505436434">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="329" y="175" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1586477763916" />
-    <state x="427" y="276" key="Vcs.Push.Dialog.v2" timestamp="1585868275106">
+    <state width="1618" height="294" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1586505436434" />
+    <state width="1618" height="294" key="GridCell.Tab.0.right" timestamp="1586505436435">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="427" y="276" key="Vcs.Push.Dialog.v2/0.23.1680.1027@0.23.1680.1027" timestamp="1585868275106" />
+    <state width="1618" height="294" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1586505436435" />
+    <state x="329" y="175" key="SettingsEditor" timestamp="1586490987678">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="329" y="175" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1586490987678" />
+    <state x="427" y="276" key="Vcs.Push.Dialog.v2" timestamp="1586478161104">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="427" y="276" key="Vcs.Push.Dialog.v2/0.23.1680.1027@0.23.1680.1027" timestamp="1586478161104" />
+    <state x="498" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1586491682867">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="498" y="349" key="com.intellij.ide.util.TipDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1586491682867" />
+    <state x="486" y="240" width="670" height="676" key="search.everywhere.popup" timestamp="1586484677619">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="486" y="240" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1586484677619" />
   </component>
 </project>
