@@ -1,0 +1,7 @@
+requests
+fire
+PyQt5==5.14.2
+PyQt5-sip==12.7.2
+PyQtWebEngine==5.14.0
+
+
