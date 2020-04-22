@@ -1,6 +1,9 @@
 # CPN Hammer
 
+### Running Bidder endpoint
 
+To run openRTB bidder endpoint use the following
+python Server.py run
 
 
 
