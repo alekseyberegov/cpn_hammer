@@ -2,6 +2,7 @@ import json
 import socketserver
 import io
 from http.server import SimpleHTTPRequestHandler
+from random import random, randint
 
 from clicktripz.openrtb.request.BidRequest import BidRequest
 from clicktripz.openrtb.response.Bid import Bid
@@ -35,7 +36,7 @@ class RtbHttpHandler(SimpleHTTPRequestHandler):
                             id=bid_req.id,
                             impid=bid_req.imp[0].id,
                             adm='http://www.clicktripz.com',
-                            price=0.6
+                            price=0.6 * (1 + (randint(1, 100) - 50) / 100)
                        )
                     ],
                     seat='clicktripz'
