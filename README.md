@@ -23,7 +23,7 @@ The path `~/venv3/lib/python3.7/site-packages/` is setup specific; so, please us
 ## The easiest way to get started with the RTB bidder
 ```shell script
 pip3 install fire
-python3 cli/Server.py 
+python3 cli/Server.py run
 ```
 
 ## Example
