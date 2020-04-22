@@ -14,7 +14,7 @@ class BidRequest(Serializable):
 
     bcat = Field(Array(String))
 
-    imp = Field(Impression, required=True)
+    imp = Field(Array(Impression), required=True)
 
     site = Field(Site)
 
