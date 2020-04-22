@@ -1,4 +1,7 @@
+import configparser
+import os
 import unittest
+from pathlib import Path
 
 from clicktripz.openrtb.exchange.DemandSource import DemandSource
 from clicktripz.openrtb.request.BidRequest import BidRequest
@@ -10,7 +13,10 @@ from clicktripz.openrtb.request.User import User
 
 class DemandSourceTestCase(unittest.TestCase):
     def setUp(self):
-        self.source = DemandSource('https://engine.4dsply.com/openrtb.engine?id=4acdfb19-9abc-4f7b-b462-6db64da879b4&zoneId=60436')
+        ini = configparser.ConfigParser()
+        ini.read(['.cpn.ini', os.path.expanduser('~/.cpn.ini')])
+
+        self.source = DemandSource(ini['dsp']['bidder_url'])
 
     def tearDown(self):
         del self.source
