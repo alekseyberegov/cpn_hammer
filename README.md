@@ -20,15 +20,25 @@ You need to initialize this file with something like:<br>
 The path `~/venv3/lib/python3.7/site-packages/` is setup specific; so, please use the one that is applicable to your environment
 
 ## Example
+### Request
 `POST http://localhost:8080` <br>
 ```javascript
 {
     "id": "5c33cff4-7487-11ea-a415-f2189846117c", 
     "bcat": ["IAB-23", "IAB-24", "IAB-25", "IAB-26"], 
-    "imp": [{"id": "5c33d166-7487-11ea-a415-f2189846117c", "instl": 1}], 
-    "site": {"id": "1482", "cat": ["IAB2-18", "Pickup", "Automotive"]}, 
+    "imp": [{
+        "id": "5c33d166-7487-11ea-a415-f2189846117c", 
+        "instl": 1
+        }], 
+    "site": {
+        "id": "1482", 
+        "cat": ["IAB2-18", "Pickup", "Automotive"
+        ]}, 
     "user": {"id": "5c33d382-7487-11ea-a415-f2189846117c"}, 
-    "device": {"ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.162 Safari/537.36", "ip": "199.248.234.0"}
+    "device": {
+        "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.162 Safari/537.36", 
+        "ip": "199.248.234.0"
+        }
 }
 ```
 
