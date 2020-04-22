@@ -20,6 +20,12 @@ You need to initialize this file with a path to `site-packages`<br>
 
 The path `~/venv3/lib/python3.7/site-packages/` is setup specific; so, please use the one that is applicable to your environment
 
+## The easiest way to get started with the RTB bidder
+```shell script
+pip3 install fire
+python3 cli/Server.py 
+```
+
 ## Example
 ### Request
 `POST http://localhost:9000` <br>
@@ -44,4 +50,6 @@ The path `~/venv3/lib/python3.7/site-packages/` is setup specific; so, please us
 ```
 
 ## Dependencies
-If you just need to run the bidder endpoint w/o generating images of ads served the only dependency is `fire`
+If you just need to run the bidder endpoint w/o generating images of ads served the only dependency is `fire` <br>
+
+
