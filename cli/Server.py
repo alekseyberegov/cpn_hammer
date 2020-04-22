@@ -1,5 +1,5 @@
 import logging
-from http.server import HTTPServer, BaseHTTPRequestHandler
+from http.server import HTTPServer
 import fire
 
 from clicktripz.http.RtbHttpHandler import RtbHttpHandler

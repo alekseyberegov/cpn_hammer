@@ -26,10 +26,6 @@ class RtbHttpHandler(SimpleHTTPRequestHandler):
         content = self.rfile.read(content_length).decode('utf-8')
 
         bid_req = BidRequest.deserialize(json.loads(content))
-        self.send_response(200)
-        self.send_header('Content-type', 'text/json')
-        self.end_headers()
-
         bid_resp = BidResponse(
             id=bid_req.id,
             seatbid=[
@@ -38,8 +34,8 @@ class RtbHttpHandler(SimpleHTTPRequestHandler):
                        Bid(
                             id=bid_req.id,
                             impid=bid_req.imp[0].id,
-                           adm='http://www.yahoo.com',
-                           price=0.6
+                            adm='http://www.clicktripz.com',
+                            price=0.6
                        )
                     ],
                     seat='adsupply'
@@ -47,4 +43,8 @@ class RtbHttpHandler(SimpleHTTPRequestHandler):
             ]
 
         )
+
+        self.send_response(200)
+        self.send_header('Content-type', 'text/json')
+        self.end_headers()
         self.wfile.write(bytes(str(bid_resp.serialize()), 'utf-8'))
