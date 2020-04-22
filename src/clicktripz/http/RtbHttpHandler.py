@@ -38,7 +38,7 @@ class RtbHttpHandler(SimpleHTTPRequestHandler):
                             price=0.6
                        )
                     ],
-                    seat='adsupply'
+                    seat='clicktripz'
                 )
             ]
 
