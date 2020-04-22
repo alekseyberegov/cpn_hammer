@@ -7,14 +7,14 @@ To run openRTB bidder endpoint you can use the following command <br>
 
 if `--port` is not specified, `9000` is used.
 
-We also provide a shell wrapper to launch the RTB bidder, which allows to use specific python environment 
-(important in case of multiple virtual Python environments)<br>
+#### Custom environment
+We also provide a bash wrapper to launch the RTB bidder using custom python environment 
+<br>
 `./rtb_bidder.sh [--port=<number>]`
 
-This wrapper needs to know the location of `site-packages` that you want to use.  You should use `~/.site-packages.env`
-to specify the location
+This wrapper uses content of the `~/.site-packages.env` file to identify the location of `site-packages` you want to use.
 
-You need to initialize this file with a path to `site-packages`<br>
+Before using the wrapper you need to initialize this file with the right path <br>
 
 `echo "<your path to site/user packages>" > ~/.site-packages.env`
 
