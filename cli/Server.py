@@ -1,8 +1,10 @@
 import logging
+import os
+import sys
 from http.server import HTTPServer
-import fire
+from pathlib import Path
 
-from clicktripz.http.RtbHttpHandler import RtbHttpHandler
+import fire
 
 
 class Server(object):
@@ -17,4 +19,9 @@ class Server(object):
 
 if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO)
-    fire.Fire(Server(handler_class=RtbHttpHandler))
+    src_path = Path(os.path.dirname(__file__)) / '..' / 'src'
+    sys.path.append(os.path.abspath(src_path))
+    logging.info(sys.path)
+    mod = __import__('clicktripz.http.RtbHttpHandler', fromlist=['RtbHttpHandler'])
+    klass = getattr(mod, 'RtbHttpHandler')
+    fire.Fire(Server(handler_class=klass))

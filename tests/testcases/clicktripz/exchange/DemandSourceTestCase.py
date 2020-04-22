@@ -1,7 +1,6 @@
 import configparser
 import os
 import unittest
-from pathlib import Path
 
 from clicktripz.openrtb.exchange.DemandSource import DemandSource
 from clicktripz.openrtb.request.BidRequest import BidRequest
