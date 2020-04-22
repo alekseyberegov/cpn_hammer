@@ -7,7 +7,6 @@
     <list default="true" id="83b9c045-13c6-4ef3-8591-1f60e78b045b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rtb_bidder.sh" beforeDir="false" afterPath="$PROJECT_DIR$/rtb_bidder.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,13 +156,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585686746529</updated>
-    </task>
-    <task id="LOCAL-00002" summary="updated to python3">
-      <created>1585699393724</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1585699393724</updated>
     </task>
     <task id="LOCAL-00003" summary="updated to python3">
       <created>1585699630273</created>
@@ -501,7 +493,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587582199029</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Added port support">
+      <created>1587582372727</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1587582372727</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -538,7 +537,8 @@
     <MESSAGE value="updated README" />
     <MESSAGE value="shell wrapper" />
     <MESSAGE value="Refactored RTB bidder" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactored RTB bidder" />
+    <MESSAGE value="Added port support" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added port support" />
   </component>
   <component name="WindowStateProjectService">
     <state x="517" y="142" key="#Creative" timestamp="1586480255793">
@@ -557,10 +557,10 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="508" y="326" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1680.1027@0.23.1680.1027" timestamp="1587571444604" />
-    <state x="451" y="137" key="CommitChangelistDialog2" timestamp="1587582198901">
+    <state x="451" y="137" key="CommitChangelistDialog2" timestamp="1587582372625">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="451" y="137" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1587582198901" />
+    <state x="451" y="137" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1587582372625" />
     <state width="1618" height="294" key="GridCell.Tab.0.bottom" timestamp="1587582114497">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
@@ -581,10 +581,10 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="329" y="175" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1587577310320" />
-    <state x="427" y="276" key="Vcs.Push.Dialog.v2" timestamp="1587582200694">
+    <state x="427" y="276" key="Vcs.Push.Dialog.v2" timestamp="1587582374415">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="427" y="276" key="Vcs.Push.Dialog.v2/0.23.1680.1027@0.23.1680.1027" timestamp="1587582200694" />
+    <state x="427" y="276" key="Vcs.Push.Dialog.v2/0.23.1680.1027@0.23.1680.1027" timestamp="1587582374415" />
     <state x="498" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1586491682867">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>

@@ -3,7 +3,7 @@
 ### Running Bidder endpoint
 
 To run openRTB bidder endpoint you can use the following command <br>
-`python3 cli/Server.py run`
+`python3 cli/Server.py run  [--port=<number>]`
 
 However, because there a few dependencies that should be in `PYTHONPATH` we provide a shell wrapper to launch the RTB bidder<br>
 `./rtb_bidder.sh [--port=<number>]`
