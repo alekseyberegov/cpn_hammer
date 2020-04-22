@@ -2,11 +2,11 @@
 
 ### Running Bidder endpoint
 
-To run openRTB bidder endpoint use the following
-python cli/Server.py run
+To run openRTB bidder endpoint you can use <br>
+`python cli/Server.py run`
 
-Because there a few dependencies for this application there a shell wrapper to start the RTB bidder<br>
-`rtb_bidder.sh`
+However, because there a few dependencies for this app we provide a shell wrapper to start the RTB bidder<br>
+`./rtb_bidder.sh`
 
 This wrapper needs to know the directory where modules are located. To find them it uses the file:
 `~/.site-packages.env`
