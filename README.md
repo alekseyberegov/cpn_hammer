@@ -5,13 +5,13 @@
 To run openRTB bidder endpoint you can use the following command <br>
 `python3 cli/Server.py run  [--port=<number>]`
 
+if `--port` is not specified, `9000` is used.
+
 We also provide a shell wrapper to launch the RTB bidder, which allows to use specific python environment 
 (important in case of multiple virtual Python environments)<br>
 `./rtb_bidder.sh [--port=<number>]`
 
-if `--port` is not specified, `9000` is used.
-
-This wrapper needs to know the location of `site-packages` that you want to use.  You can use `~/.site-packages.env`
+This wrapper needs to know the location of `site-packages` that you want to use.  You should use `~/.site-packages.env`
 to specify the location
 
 You need to initialize this file with a path to `site-packages`<br>
