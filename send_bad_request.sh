@@ -48,12 +48,6 @@ do
   --data-raw '{
       "id" : "fffd894f-c33c-4c08-b826-4448fcaecc85",
       "bcat" : [ "CTX-1", "CTX-3", "CTX-4" ],
-      "imp": [
-          {
-          "id": "aaad894f-c33c-4c08-b826-4448fcaecc899",
-           "instl": 1
-          }
-      ],
       "site": {
           "id": "19283",
           "cat" : [ "IAB12", "IAB12-5" ]

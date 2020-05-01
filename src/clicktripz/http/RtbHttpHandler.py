@@ -1,16 +1,43 @@
 import json
-import socketserver
 import io
+import sys
+import traceback
+import urllib
 from http.server import SimpleHTTPRequestHandler
-from random import random, randint
 
+from clicktripz.openrtb.exchange.BidManager import BidManager
 from clicktripz.openrtb.request.BidRequest import BidRequest
 from clicktripz.openrtb.response.Bid import Bid
 from clicktripz.openrtb.response.BidResponse import BidResponse
 from clicktripz.openrtb.response.SeatBid import SeatBid
+from clicktripz.http.ResponseFactory import ResponseFactory
+from clicktripz.serialize.ValidationError import ValidationError
 
 
 class RtbHttpHandler(SimpleHTTPRequestHandler):
+    def __init__(self, *args, **kwargs):
+        self.bid_manager = BidManager()
+        self.resp_factory = ResponseFactory()
+        super().__init__(*args, **kwargs)
+
+    def handle_bid(self, bid_req: BidRequest) -> BidRequest:
+        bid_resp = BidResponse(
+            id=bid_req.id,
+            seatbid=[
+                SeatBid(
+                    bid=[
+                        Bid(
+                            id=bid_req.id,
+                            impid=bid_req.imp[0].id,
+                            adm=self.resp_factory.get_adm_url(),
+                            price=self.bid_manager.generate_bid()
+                        )
+                    ],
+                    seat='clicktripz'
+                )
+            ]
+        )
+        return bid_resp
 
     def do_GET(self):
         output = io.BytesIO()
@@ -26,26 +53,18 @@ class RtbHttpHandler(SimpleHTTPRequestHandler):
         content_length = int(self.headers['Content-Length'])
         content = self.rfile.read(content_length).decode('utf-8')
 
-        bid_req = BidRequest.deserialize(json.loads(content))
-        bid_resp = BidResponse(
-            id=bid_req.id,
-            seatbid=[
-                SeatBid(
-                    bid=[
-                       Bid(
-                            id=bid_req.id,
-                            impid=bid_req.imp[0].id,
-                            adm='http://www.clicktripz.com',
-                            price=0.6 * (1 + (randint(1, 100) - 50) / 100)
-                       )
-                    ],
-                    seat='clicktripz'
-                )
-            ]
+        try:
+            bid_req = BidRequest.deserialize(json.loads(content))
+            bid_resp = self.handle_bid(bid_req)
+            resp_body = str(bid_resp.serialize())
+            resp_code = 200
+        except (ValidationError, ValueError) as err:
+            exc_type, exc_value, exc_traceback = sys.exc_info()
+            resp_body = repr(traceback.format_exception(exc_type, exc_value, exc_traceback))
+            resp_code = 400
 
-        )
-
-        self.send_response(200)
+        self.send_response(resp_code)
         self.send_header('Content-type', 'text/json')
         self.end_headers()
-        self.wfile.write(bytes(str(bid_resp.serialize()), 'utf-8'))
+        self.wfile.write(bytes(resp_body, 'utf-8'))
+

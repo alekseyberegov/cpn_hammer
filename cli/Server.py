@@ -1,7 +1,7 @@
 import logging
 import os
 import sys
-from http.server import HTTPServer
+from http.server import HTTPServer, ThreadingHTTPServer
 from pathlib import Path
 
 import fire
@@ -13,7 +13,7 @@ class Server(object):
 
     def run(self, port=9000):
         server_address = ('', port)
-        httpd = HTTPServer(server_address, self.handler_class)
+        httpd = ThreadingHTTPServer(server_address, self.handler_class)
         httpd.serve_forever()
 
 
