@@ -39,15 +39,19 @@ class RtbHttpHandler(SimpleHTTPRequestHandler):
         )
         return bid_resp
 
-    def do_GET(self):
+    def send_unsupported(self, capability):
         output = io.BytesIO()
-        self.send_response(200)
+        self.send_response(400)
         self.send_header('Content-type', 'text/json')
         self.end_headers()
 
-        output.write(b"PLEASE USE POST METHOD")
+        resp_body = '{"error": "%s is not supported"}' % capability
+        output.write(bytes(resp_body, 'utf-8'))
         output.seek(0)
         self.wfile.write(output.read())
+
+    def do_GET(self):
+        self.send_unsupported('GET')
 
     def do_POST(self):
         content_length = int(self.headers['Content-Length'])
@@ -61,6 +65,7 @@ class RtbHttpHandler(SimpleHTTPRequestHandler):
         except (ValidationError, ValueError) as err:
             exc_type, exc_value, exc_traceback = sys.exc_info()
             resp_body = repr(traceback.format_exception(exc_type, exc_value, exc_traceback))
+            resp_body = '{"error": "malformed request", "stacktrace" : "%s"}' % urllib.parse.quote(resp_body)
             resp_code = 400
 
         self.send_response(resp_code)

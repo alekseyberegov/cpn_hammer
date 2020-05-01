@@ -36,9 +36,6 @@ set -- "${POSITIONAL[@]}" # restore positional parameters
 COUNT=${COUNT:-1}
 ENDPOINT=${ENDPOINT:-"http://127.0.0.1:9000"}
 
-echo "COUNT         = ${COUNT}"
-echo "ENDPOINT      = ${ENDPOINT}"
-
 for i in `eval echo {1..$COUNT}`
 do
   curl --location --request POST ${ENDPOINT} \

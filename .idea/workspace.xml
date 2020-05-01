@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="83b9c045-13c6-4ef3-8591-1f60e78b045b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/send_bad_request.sh" beforeDir="false" afterPath="$PROJECT_DIR$/send_bad_request.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clicktripz/http/RtbHttpHandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/clicktripz/http/RtbHttpHandler.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,13 +156,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585686746529</updated>
-    </task>
-    <task id="LOCAL-00024" summary="Added simulator">
-      <created>1585780122662</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1585780122662</updated>
     </task>
     <task id="LOCAL-00025" summary="Added simulator">
       <created>1585780131863</created>
@@ -499,7 +493,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588295315897</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="Update README file">
+      <created>1588310567425</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1588310567425</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -539,7 +540,8 @@
     <MESSAGE value="Improving path" />
     <MESSAGE value="update the doc" />
     <MESSAGE value="Added SILENT flag" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added SILENT flag" />
+    <MESSAGE value="Update README file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update README file" />
   </component>
   <component name="WindowStateProjectService">
     <state x="517" y="142" key="#Creative" timestamp="1586480255793">
@@ -558,10 +560,10 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="508" y="326" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1680.1027@0.23.1680.1027" timestamp="1587571444604" />
-    <state x="451" y="137" key="CommitChangelistDialog2" timestamp="1588295315745">
+    <state x="451" y="137" key="CommitChangelistDialog2" timestamp="1588310567266">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="451" y="137" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1588295315745" />
+    <state x="451" y="137" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1588310567266" />
     <state width="1618" height="294" key="GridCell.Tab.0.bottom" timestamp="1587616544679">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
@@ -582,10 +584,10 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="329" y="175" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1588285811662" />
-    <state x="427" y="276" key="Vcs.Push.Dialog.v2" timestamp="1588295317466">
+    <state x="427" y="276" key="Vcs.Push.Dialog.v2" timestamp="1588310568929">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="427" y="276" key="Vcs.Push.Dialog.v2/0.23.1680.1027@0.23.1680.1027" timestamp="1588295317466" />
+    <state x="427" y="276" key="Vcs.Push.Dialog.v2/0.23.1680.1027@0.23.1680.1027" timestamp="1588310568929" />
     <state x="498" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1586491682867">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
