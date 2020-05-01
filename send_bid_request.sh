@@ -8,7 +8,7 @@ key="$1"
 case $key in
     -h|--help)
     echo ""
-    echo "Usage: $0 [-c|--count <request count>] [-e|--endpoint <endpoint>]"
+    echo "Usage: $0 [-c|--count <request count>] [-e|--endpoint <endpoint>] [--silent]"
     exit 1
     ;;
     -c|--count)
@@ -21,8 +21,8 @@ case $key in
     shift # past argument
     shift # past value
     ;;
-    --default)
-    DEFAULT=YES
+    --silent)
+    SILENT=" -silent --output /dev/null "
     shift # past argument
     ;;
     *)    # unknown option
@@ -38,10 +38,11 @@ ENDPOINT=${ENDPOINT:-"http://127.0.0.1:9000"}
 
 echo "COUNT         = ${COUNT}"
 echo "ENDPOINT      = ${ENDPOINT}"
+echo "SILENT        = ${SILENT}"
 
 for i in `eval echo {1..$COUNT}`
 do
-  curl --location --request POST ${ENDPOINT} \
+  curl $SILENT --location --request POST ${ENDPOINT} \
   --header 'Content-Type: application/json' \
   --header 'Host: localhost' \
   --header 'x-openrtb-version: 2.5' \
@@ -66,5 +67,8 @@ do
           "id": "08057c4b-4cb3-4e65-8a9b-b6db49d921a7"
       }
   }'
-  echo ""
+  if [[ "$SILENT" = "" ]]
+  then
+    echo ""
+  fi
 done
