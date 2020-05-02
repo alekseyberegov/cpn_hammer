@@ -36,6 +36,10 @@ python3 cli/Server.py run
 ```
 Use `./send_bid_request.sh --help` to get information about all supported parameters
 
+## Troubleshooting
+```shell script
+sudo tcpdump  -i eth0 'tcp[13] & 2 != 0 and (dst port 9000)'
+```
 ## Dependencies
 If you just need to run the bidder endpoint w/o generating images of ads served the only dependency is `fire` <br>
 
