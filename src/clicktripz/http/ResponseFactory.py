@@ -6,6 +6,7 @@ class ResponseFactory(object):
         self.adm_url = make_url('https://staycation.tiki.com'
                                 , utm_source=2949
                                 , utm_campaign='staycation'
+                                , utm_content='ssp'
                                 , utm_medium='LBemail'
                                 , bid='${AUCTION_PRICE}')
 
