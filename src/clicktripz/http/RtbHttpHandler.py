@@ -29,7 +29,7 @@ class RtbHttpHandler(SimpleHTTPRequestHandler):
                         Bid(
                             id=bid_req.id,
                             impid=bid_req.imp[0].id,
-                            adm=self.resp_factory.get_adm_url(),
+                            adm=self.resp_factory.get_adm_url(auction_uuid=bid_req.id),
                             price=self.bid_manager.generate_bid()
                         )
                     ],

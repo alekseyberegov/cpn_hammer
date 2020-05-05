@@ -1,4 +1,4 @@
-from clicktripz.http.utils import make_url
+from clicktripz.http.utils import make_url, make_query_string
 
 
 class ResponseFactory(object):
@@ -10,5 +10,5 @@ class ResponseFactory(object):
                                 , utm_medium='LBemail'
                                 , bid='${AUCTION_PRICE}')
 
-    def get_adm_url(self):
-        return self.adm_url
+    def get_adm_url(self, **params):
+        return self.adm_url + '&' + make_query_string(params)
