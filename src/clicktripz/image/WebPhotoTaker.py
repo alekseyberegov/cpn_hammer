@@ -1,11 +1,11 @@
 import uuid
+from functools import partial
 from pathlib import Path
 
 from PyQt5 import QtCore
-from PyQt5.QtCore import QUrl, QSize
-from PyQt5.QtWebEngineWidgets import QWebEngineView, QWebEnginePage
+from PyQt5.QtCore import QUrl
+from PyQt5.QtWebEngineWidgets import QWebEngineView
 from PyQt5.QtWidgets import QApplication
-from functools import partial
 
 
 class WebPhotoTaker(object):
@@ -28,7 +28,6 @@ class WebPhotoTaker(object):
 
     def done(self, view, file, ok):
         if ok:
-            print(file)
             frame = view.page()
             view.page().pdfPrintingFinished.connect(view.close)
             frame.printToPdf(file)

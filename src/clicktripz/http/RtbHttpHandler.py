@@ -21,19 +21,23 @@ class RtbHttpHandler(SimpleHTTPRequestHandler):
         super().__init__(*args, **kwargs)
 
     def handle_bid(self, bid_req: BidRequest) -> BidRequest:
+        url = self.resp_factory.get_adm_url(auction_uuid=bid_req.id)
         bid_resp = BidResponse(
             id=bid_req.id,
+            cur="USD",
             seatbid=[
                 SeatBid(
                     bid=[
                         Bid(
                             id=bid_req.id,
                             impid=bid_req.imp[0].id,
-                            adm=self.resp_factory.get_adm_url(auction_uuid=bid_req.id),
-                            price=self.bid_manager.generate_bid()
+                            adm=url,
+                            nurl=url,
+                            price=self.bid_manager.generate_bid(),
+                            w=1024,
+                            x=768
                         )
                     ],
-                    seat='clicktripz'
                 )
             ]
         )

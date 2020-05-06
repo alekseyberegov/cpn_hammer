@@ -44,7 +44,7 @@ for i in `eval echo {1..$COUNT}`
 do
   curl $SILENT --location --request POST ${ENDPOINT} \
   --header 'Content-Type: application/json' \
-  --header 'Host: localhost' \
+  --header 'Host: engine.4dsply.com' \
   --header 'x-openrtb-version: 2.5' \
   --data-raw '{
       "id" : "fffd894f-c33c-4c08-b826-4448fcaecc85",
@@ -57,11 +57,11 @@ do
       ],
       "site": {
           "id": "19283",
-          "cat" : [ "IAB12", "IAB12-5" ]
+          "cat" : [ "IAB12", "IAB12-5", "coats", "spring" ]
       },
       "device": {
           "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36",
-          "ip": "108.185.178.0"
+          "ip": "108.185.179.0"
       },
       "user": {
           "id": "08057c4b-4cb3-4e65-8a9b-b6db49d921a7"
