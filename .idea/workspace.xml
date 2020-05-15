@@ -149,13 +149,6 @@
       <option name="presentableId" value="Default" />
       <updated>1585686746529</updated>
     </task>
-    <task id="LOCAL-00031" summary="Added DB support">
-      <created>1585851829790</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1585851829790</updated>
-    </task>
     <task id="LOCAL-00032" summary="Added DB support">
       <created>1585868160208</created>
       <option name="number" value="00032" />
@@ -492,7 +485,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588796281176</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="updated script">
+      <created>1589510011075</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1589510011075</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -511,7 +511,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="updated to python3" />
     <MESSAGE value="Added array" />
     <MESSAGE value="Updated bid request" />
     <MESSAGE value="BidRequest" />
@@ -536,7 +535,8 @@
     <MESSAGE value="update README" />
     <MESSAGE value="add utm_content" />
     <MESSAGE value="added auction_uuid" />
-    <option name="LAST_COMMIT_MESSAGE" value="added auction_uuid" />
+    <MESSAGE value="updated script" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated script" />
   </component>
   <component name="WindowStateProjectService">
     <state x="517" y="142" key="#Creative" timestamp="1586480255793">
@@ -555,10 +555,10 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="508" y="326" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1680.1027@0.23.1680.1027" timestamp="1587571444604" />
-    <state x="451" y="137" key="CommitChangelistDialog2" timestamp="1588796280900">
+    <state x="451" y="137" key="CommitChangelistDialog2" timestamp="1589510010875">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="451" y="137" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1588796280900" />
+    <state x="451" y="137" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1589510010875" />
     <state width="1618" height="330" key="GridCell.Tab.0.bottom" timestamp="1588832166189">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
@@ -595,10 +595,10 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="329" y="175" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1588831245359" />
-    <state x="427" y="276" key="Vcs.Push.Dialog.v2" timestamp="1588796282678">
+    <state x="427" y="276" key="Vcs.Push.Dialog.v2" timestamp="1589510013735">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="427" y="276" key="Vcs.Push.Dialog.v2/0.23.1680.1027@0.23.1680.1027" timestamp="1588796282678" />
+    <state x="427" y="276" key="Vcs.Push.Dialog.v2/0.23.1680.1027@0.23.1680.1027" timestamp="1589510013735" />
     <state x="498" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1586491682867">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
